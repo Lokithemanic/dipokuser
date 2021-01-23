@@ -60,11 +60,7 @@ async def friday(alive):
                   f"➥ **Current Branch** : `{branch_name}`\n"
                   f"➥ **Version** : `6.5`\n"
                   f"➥ **My Boss** : {DEFAULTUSER} \n"
-                  "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
-                  "➥ **License** : [GNU General Public License v3.0](github.com/StarkGang/FridayUserbot/blob/master/LICENSE)\n"
-                  "➥ **Copyright** : By [StarkGang@Github](GitHub.com/StarkGang)\n"
-                  "➥ **Check Stats By Doing** `.stat`. \n\n"
-                  "[🇮🇳 Deploy FridayUserbot 🇮🇳](https://telegra.ph/FRIDAY-06-15)")
+                  "➥ **Heroku Database** : `AWS - Working Properly`
     
     await borg.send_file(alive.chat_id, PM_IMG, caption=pm_caption)
     await alive.delete()
