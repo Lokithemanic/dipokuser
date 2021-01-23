@@ -71,10 +71,10 @@ async def start(event):
             file=mypic,
             caption=starttext,
             link_preview=False,
-            buttons=[
-                [custom.Button.inline("Deploy your Friday 🇮🇳", data="deploy")],
-                [Button.url("Help Me ❓", "t.me/Fridayot")],
-            ],
+           # buttons=[
+            #    [custom.Button.inline("Deploy your Friday 🇮🇳", data="deploy")],
+             #   [Button.url("Help Me ❓", "t.me/Fridayot")],
+            #],
         )
         if os.path.exists(mypic):
             os.remove(mypic)
@@ -89,11 +89,12 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Friday In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
-            buttons=[
-                [Button.url("Deploy Tutorial 📺", "https://youtu.be/xfHcm_e92eQ")],
-                [Button.url("Need Help ❓", "t.me/FridaySupportOfficial")],
-            ],
+            message="My senses are tingling"
+            #message="You Can Deploy Friday In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+          #  buttons=[
+            #    [Button.url("Deploy Tutorial 📺", "https://youtu.be/xfHcm_e92eQ")],
+            #    [Button.url("Need Help ❓", "t.me/FridaySupportOfficial")],
+          #  ],
         )
 
 
@@ -143,7 +144,7 @@ async def all_messages_catcher(event):
             )
         except telethon.errors.rpcerrorlist.UserNotParticipantError:
             await event.reply(f"**Opps, I Couldn't Forward That Message To Owner. Please Join My Channel First And Then Try Again!**",
-                             buttons = [Button.url("Join Channel 🇮🇳", Config.JTM_CHANNEL_USERNAME)])
+                             #buttons = [Button.url("Join Channel 🇮🇳", Config.JTM_CHANNEL_USERNAME)])
             return
     await event.get_sender()
     sed = await event.forward_to(bot.uid)
