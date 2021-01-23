@@ -52,7 +52,7 @@ async def _(event):
                 f"**My Master Seems To Be Too Busy 👀.** \n__He Going Afk Because Of__ `{reason}`",
             )
         else:
-            await borg.send_message(event.chat_id, f"**I Am Busy And I Am Going Afk**.")
+            await borg.send_message(event.chat_id, f"**Sone do btc. AFK**.")
         await asyncio.sleep(5)
         await event.delete()
         try:
