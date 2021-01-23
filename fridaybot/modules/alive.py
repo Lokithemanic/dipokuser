@@ -40,7 +40,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Spidey"
 PM_IMG = Config.ALIVE_IMAGE
 
 
@@ -51,7 +51,7 @@ async def friday(alive):
     uptime = get_readable_time((time.time() - Lastupdate))
     repo = Repo()
     branch_name = repo.active_branch.name
-    pm_caption = ("➥ **FRIDAY IS:** `ONLINE`\n\n"
+    pm_caption = ("➥ **Dipok IS:** `ONLINE`\n\n"
                   "➥ **SYSTEMS STATS**\n"
                   f"➥ **Telethon Version:** `{tv}` \n"
                   f"➥ **Python:** `{platform.python_version()}` \n"
